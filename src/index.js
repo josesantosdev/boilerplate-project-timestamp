@@ -1,10 +1,15 @@
 // index.js
 // where your node app starts
 require('dotenv').config();
+var bodyParser = require('body-parser');
+var dateController = require('./controllers/dateController');
 
 // init project
 var express = require('express');
 var app = express();
+
+app.use(bodyParser.json());
+app.use('/api', dateController);
 
 // enable CORS (https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
 // so that your API is remotely testable by FCC 
