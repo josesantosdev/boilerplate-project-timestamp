@@ -1,4 +1,4 @@
-const DateEntity = require('../entities/DateEntity');
+const DateEntity = require('../entities/dateEntity');
 
 class DateService {
     static getDateInfo(dateString) {
