@@ -2,7 +2,7 @@
 // where your node app starts
 require('dotenv').config();
 var bodyParser = require('body-parser');
-var dateController = require('./controllers/dateController');
+var dateController = require('./src/controllers/dateController');
 
 // init project
 var express = require('express');
